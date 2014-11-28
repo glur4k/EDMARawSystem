@@ -6,14 +6,14 @@ $GLOBALS['config'] = array(
         'host' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'db' => 'loginsystem'
+        'db' => 'teamprojekt'
     ),
     'remember' => array(
         'cookie_name' => 'hash',
         'cookie_expiry' => 604800
     ),
     'session' => array(
-        'session_name' => 'user',
+        'session_name' => 'projekt',
         'token_name' => 'token'
     )
 );
