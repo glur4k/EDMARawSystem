@@ -13,12 +13,12 @@ if ($projekt->isLoggedIn()) {
     <ul>
         <li><a href="logout.php">Ausloggen</a></li>
         <li><a href="update.php">Profildaten aktualisieren</a></li>
+        <li><a href="test.php">Testseite</a></li>
     </ul>
 <?php
     if ($projekt->isMaster()) {
         echo 'Du bist ein Admin';
     }
 } else {
-    Session::flash('login', 'Bitte zu erst anmelden!');
     Redirect::to('login.php');
 }

@@ -1,7 +1,7 @@
 <?php
 require_once 'core/init.php';
 
-$user = new User();
-$user->logout();
+$projekt = new Projekt();
+$projekt->logout();
 
-Redirect::to('index.php');
+Redirect::to('login.php');

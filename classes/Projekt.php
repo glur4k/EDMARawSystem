@@ -19,7 +19,7 @@ class Projekt {
 
         if (!$projekt) {
             if (Session::exists($this->_sessionName)) {
-                echo 'session exists!';
+                echo 'Session: session exists!';
                 $projekt = Session::get($this->_sessionName);
 
                 if ($this->find($projekt)) {

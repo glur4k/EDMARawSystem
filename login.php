@@ -1,11 +1,8 @@
 <?php
 require_once 'core/init.php';
-Session::delete('isMaster');
-Session::delete('projekt');
 
-if (Session::exists('login')) {
-    echo Session::flash('login');
-}
+$projekt = new Projekt();
+$projekt->logout();
 
 if (Input::exists()) {
     if (Token::check(Input::get('token'))) {
@@ -41,9 +38,9 @@ if (Input::exists()) {
 
 <form action="" method="post">
     <div class="field">
-        <label for="projekt">Projekt auswählen</label><br>
+        <label for="projekt">Projekt ausw&auml;hlen</label><br>
         <select name="projekt">
-            <option value="new">Projekt hinzufügen</option>
+            <option value="new">Projekt hinzuf&uuml;gen</option>
             <option value="1">Projekt 1</option>
         </select>
     </div>
